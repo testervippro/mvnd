@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+MVND_HOME="$DIR/.mvnd/maven-mvnd-2.0.0-rc-3-darwin-amd64"
+export MVND_HOME
+
+exec "$MVND_HOME/bin/mvnd" "$@"
